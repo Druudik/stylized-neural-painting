@@ -80,7 +80,7 @@ git clone https://github.com/Druudik/stylized-neural-painting.git && cd stylized
 uv sync
 ```
 
-4\. Start a jupyter server instance and check out the `paint.ipynb`:
+4\. Start a jupyter server instance and check out the `colab_demo.ipynb` to run Gradio demo app locally, or `paint.ipynb` for more customization:
 ```bash
 jupyter lab paint.ipynb
 ```
