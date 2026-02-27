@@ -145,7 +145,6 @@ class StyleTransferer:
         style_image = style_image.unsqueeze(0)
         style_image = kornia.geometry.resize(style_image, (128, 128))
         style_image = kornia.filters.blur.box_blur(style_image, 2)
-        style_image = style_image.squeeze(0)
 
         n_grids = n_grids_per_dim * n_grids_per_dim
         grid_contexts, grid_assignments = self._assign_strokes_to_grids(brush_params, n_grids_per_dim)
